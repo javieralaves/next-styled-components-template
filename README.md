@@ -50,6 +50,3 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 - [Next.js](https://nextjs.org/)
 - [Styled-components](https://www.styled-components.com)
-
-
-https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex
