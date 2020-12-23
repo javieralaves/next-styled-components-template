@@ -6,7 +6,7 @@ For this purpose we are extending the `<Document />` and injecting the server si
 
 ## Getting Started
 
-1.Clone this repo:
+1. Clone this repo:
 
 ```
 git clone https://github.com/niklaspeterson/next-styled-components-template.git`
