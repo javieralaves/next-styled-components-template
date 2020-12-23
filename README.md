@@ -21,9 +21,9 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+4. You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit and save the file.
 
 
 ## Deploy to Netlify options
