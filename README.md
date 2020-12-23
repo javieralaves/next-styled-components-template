@@ -6,8 +6,6 @@ For this purpose we are extending the `<Document />` and injecting the server si
 
 ## Getting Started
 
-**Option one:** Clone repo:
-
 Clone this repo: `git clone https://github.com/niklaspeterson/next-styled-components-template.git`
 
 ```bash
@@ -20,21 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-**Option two:** Next example:
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-### Deploy to Netlify options
+## Deploy to Netlify options
 
 **Option one:** One-click deploy
 
