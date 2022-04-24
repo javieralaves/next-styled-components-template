@@ -26,20 +26,13 @@ yarn dev
 4. You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit and save the file.
 
 ## Deploy to Vercel
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNiklasPeterson%2Fnext-styled-components-template)
 
 ## Deploy to Netlify options
 
-**Option one:** One-click deploy
-
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/niklaspeterson/next-styled-components-template)
 
-**Option two:** Manual clone & setup
-
-1. Clone this repo: `git clone https://github.com/niklaspeterson/next-styled-components-template.git`
-2. Navigate to the directory and run `npm run dev` or `yarn dev`
-3. Make your changes
-4. Connect to [Netlify](https://url.netlify.com) manually (the `netlify.toml` file is the one you'll need to make sure stays intact to make sure the export is done and pointed to the right stuff)
 
 ## Dependencies
 
