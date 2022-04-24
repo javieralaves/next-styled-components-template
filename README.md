@@ -25,6 +25,8 @@ yarn dev
 
 4. You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit and save the file.
 
+## Deploy to Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNiklasPeterson%2Fnext-styled-components-template)
 
 ## Deploy to Netlify options
 
