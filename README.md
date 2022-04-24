@@ -2,7 +2,7 @@
 
 This example features how yo use [styled-components](https://github.com/styled-components/styled-components) which supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. 
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and using [Next.js Compiler for Styled Components](https://nextjs.org/docs/advanced-features/compiler#styled-components). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
 
 ## Getting Started
 
