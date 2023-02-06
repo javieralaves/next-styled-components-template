@@ -1,6 +1,8 @@
-module.exports = {
-	compiler: {
-		// ssr and displayName are configured by default
-		styledComponents: true,
-	},
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
 }
+
+module.exports = nextConfig
