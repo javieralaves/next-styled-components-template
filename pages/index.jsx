@@ -1,8 +1,15 @@
 import Head from "next/head";
 import styled from "styled-components";
-import { theme } from "../components/GlobalStyle";
+import React, { useState } from "react";
 
 export default function Home() {
+  // State to manage form submission
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = () => {
+    setIsSubmitted(true);
+  };
+
   const NavigationBar = styled.nav`
     width: 100%;
     padding-top: 32px;
@@ -147,24 +154,33 @@ export default function Home() {
       </NavigationBar>
 
       <PageWrapper>
-        <ContentContainer>
-          <ListImage>
-            <CreatorPicture />
-          </ListImage>
-          <Title>accept ali abdaal’s invite</Title>
-          <Subtitle>
-            please provide us with your info and we’ll send you a link to
-            download voicepal and get access to ali’s list.
-          </Subtitle>
+        {isSubmitted ? (
+          <div style={{ textAlign: "center" }}>
+            {/* Replace with an actual check icon as needed */}
+            <span style={{ fontSize: "48px" }}>✔️</span>
+            <p>Request has been sent. We'll get back to you shortly.</p>
+          </div>
+        ) : (
+          <ContentContainer>
+            <ListImage>
+              <CreatorPicture />
+            </ListImage>
+            <Title>accept ali abdaal’s invite</Title>
+            <Subtitle>
+              please provide us with your info and we’ll send you a link to
+              download voicepal and get access to ali’s list.
+            </Subtitle>
 
-          {/* Wrap input fields */}
-          <FormInputsWrapper>
-            <Input type="text" placeholder="full name" />
-            <Input type="email" placeholder="email address" />
-          </FormInputsWrapper>
+            <FormInputsWrapper>
+              <Input type="text" placeholder="full name" />
+              <Input type="email" placeholder="email address" />
+            </FormInputsWrapper>
 
-          <Button type="submit">submit</Button>
-        </ContentContainer>
+            <Button type="button" onClick={handleSubmit}>
+              submit
+            </Button>
+          </ContentContainer>
+        )}
       </PageWrapper>
     </>
   );
