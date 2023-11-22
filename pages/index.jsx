@@ -3,6 +3,24 @@ import styled from "styled-components";
 import { theme } from "../components/GlobalStyle";
 
 export default function Home() {
+  const NavigationBar = styled.nav`
+    width: 100%;
+    padding-top: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: -1.5px;
+      text-align: center;
+      font-weight: 800;
+      font-family: "Nunito", sans-serif;
+    }
+  `;
+
   const ListImage = styled.div`
     width: 112px;
     height: 112px;
@@ -18,7 +36,7 @@ export default function Home() {
   const CreatorPicture = styled.div`
     width: 56px;
     height: 56px;
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 24px;
     background-image: url("https://source.unsplash.com/random/56x56?portrait&man&smile");
     background-size: cover;
@@ -123,6 +141,10 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
+
+      <NavigationBar>
+        <h1>voicepal</h1>
+      </NavigationBar>
 
       <PageWrapper>
         <ContentContainer>
