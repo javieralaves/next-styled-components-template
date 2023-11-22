@@ -27,6 +27,13 @@ export default function Home() {
       font-weight: 800;
       font-family: "Nunito", sans-serif;
     }
+
+    @media (max-width: 768px) {
+      padding-top: 16px;
+      h1 {
+        font-size: 24px;
+      }
+    }
   `;
 
   const ListImage = styled.div`
@@ -39,6 +46,11 @@ export default function Home() {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 24px;
     position: relative;
+
+    @media (max-width: 768px) {
+      width: 80px;
+      height: 80px;
+    }
   `;
 
   const CreatorPicture = styled.div`
@@ -52,6 +64,13 @@ export default function Home() {
     position: absolute;
     right: -12px; // Offset on the right
     bottom: -12px; // Offset on the bottom
+
+    @media (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+      right: -8px;
+      bottom: -8px;
+    }
   `;
 
   const PageWrapper = styled.div`
@@ -78,6 +97,11 @@ export default function Home() {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+      max-width: 100%;
+    }
   `;
 
   // Styled title component
@@ -89,6 +113,11 @@ export default function Home() {
     margin: 0 0 12px 0;
     text-align: center;
     font-weight: 800;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
   `;
 
   // Styled subtitle component
@@ -100,6 +129,11 @@ export default function Home() {
     margin: 0 0 24px 0;
     text-align: center;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   `;
 
   const Input = styled.input`
