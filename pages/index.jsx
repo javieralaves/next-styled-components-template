@@ -1,6 +1,7 @@
 import Head from "next/head";
-import styled from "styled-components";
 import React, { useState } from "react";
+import { RiCheckboxCircleFill } from "react-icons/ri";
+import styled from "styled-components";
 
 export default function Home() {
   // State to manage form submission
@@ -154,33 +155,39 @@ export default function Home() {
       </NavigationBar>
 
       <PageWrapper>
-        {isSubmitted ? (
-          <div style={{ textAlign: "center" }}>
-            {/* Replace with an actual check icon as needed */}
-            <span style={{ fontSize: "48px" }}>✔️</span>
-            <p>Request has been sent. We'll get back to you shortly.</p>
-          </div>
-        ) : (
-          <ContentContainer>
-            <ListImage>
-              <CreatorPicture />
-            </ListImage>
-            <Title>accept ali abdaal’s invite</Title>
-            <Subtitle>
-              please provide us with your info and we’ll send you a link to
-              download voicepal and get access to ali’s list.
-            </Subtitle>
+        <ContentContainer>
+          {isSubmitted ? (
+            <div style={{ textAlign: "center" }}>
+              <RiCheckboxCircleFill
+                style={{ fontSize: "48px", color: "#5e5ce6" }}
+              />
+              <p>
+                Thank you, we've received your request and will get back to you
+                shortly!
+              </p>
+            </div>
+          ) : (
+            <>
+              <ListImage>
+                <CreatorPicture />
+              </ListImage>
+              <Title>accept ali abdaal’s invite</Title>
+              <Subtitle>
+                please provide us with your info and we’ll send you a link to
+                download voicepal and get access to ali’s list.
+              </Subtitle>
 
-            <FormInputsWrapper>
-              <Input type="text" placeholder="full name" />
-              <Input type="email" placeholder="email address" />
-            </FormInputsWrapper>
+              <FormInputsWrapper>
+                <Input type="text" placeholder="full name" />
+                <Input type="email" placeholder="email address" />
+              </FormInputsWrapper>
 
-            <Button type="button" onClick={handleSubmit}>
-              submit
-            </Button>
-          </ContentContainer>
-        )}
+              <Button type="button" onClick={handleSubmit}>
+                submit
+              </Button>
+            </>
+          )}
+        </ContentContainer>
       </PageWrapper>
     </>
   );
