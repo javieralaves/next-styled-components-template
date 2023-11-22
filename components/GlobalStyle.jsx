@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -6,26 +6,26 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     background: var(--color-background);
-    color: var(--color-text)
+    color: var(--color-text);
+    font-family: 'Nunito', sans-serif;
   }
 
   :root {
-	--color-background: #fafafa;
-	--color-text: #1e2024;
+	--color-background: #F3F3F5;
+	--color-text: #242424;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-background: #1e2024;
-		--color-text: #fafafa;
+		--color-background: #fff;
+		--color-text: #242424;
 	}
 }
 
-`
+`;
 
 export const theme = {
   colors: {
-    primary: 'blue',
-    secondary: 'green',
+    primary: "#5E5CE6",
   },
-}
+};
